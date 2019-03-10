@@ -6,7 +6,7 @@
 extern "C"
 {
 	namespace library {
-		int DECLSPEC Add(int a, int b)
+		int Add(int a, int b)
 		{
 
 			#ifdef USE_MYMATH
