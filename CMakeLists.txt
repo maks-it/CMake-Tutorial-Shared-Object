@@ -36,7 +36,7 @@ configure_file (
 add_subdirectory(Library)
 
 # add the executable
-add_executable(Tutorial_SharedObject testing.cpp)
+add_executable(Tutorial_SharedObject testing.cxx)
 target_link_libraries(Tutorial_SharedObject Library)
 
 # add the binary tree to the search path for include files

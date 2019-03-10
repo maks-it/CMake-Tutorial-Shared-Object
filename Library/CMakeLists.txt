@@ -2,7 +2,7 @@
 set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
 
 # add library as Shared Object
-add_library(Library SHARED Library.cpp)
+add_library(Library SHARED Library.cxx)
 
 # state that anybody linking to us needs to include the current source dir
 # to find Library.h, while we don't.
@@ -20,7 +20,7 @@ endif(USE_MYMATH)
 
 
 # example to add another library
-add_library(AddLibrary STATIC add.cpp)
+add_library(AddLibrary STATIC add.cxx)
 
  set_target_properties(AddLibrary PROPERTIES
                         POSITION_INDEPENDENT_CODE ${BUILD_SHARED_LIBS}
